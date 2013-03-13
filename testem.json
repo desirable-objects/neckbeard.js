@@ -1,0 +1,12 @@
+{
+    "framework": "mocha",
+    "src_files": [
+        "spec/**/*.spec.js"
+    ],
+    "launchers": {
+        "Node": {
+            "command": "node_modules/jasmine-node/lib/jasmine-node/cli.js spec"
+        }
+    },
+    "launch_in_dev": [ "node" ]
+}

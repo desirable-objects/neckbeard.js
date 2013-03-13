@@ -1,0 +1,22 @@
+{
+  "name": "njs-exp",
+  "version": "0.0.0",
+  "description": "An Experiment",
+  "main": "app.js",
+  "dependencies": {
+    "testem": "~0.2.72",
+    "express": "~3.1.0",
+    "request": "~2.14.0",
+    "testem-node": "~0.1.5",
+    "jasmine-node": "1.3.1"
+  },
+  "devDependencies": {
+    "mocha": "~1.8.2"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": "",
+  "author": "",
+  "license": "BSD"
+}
