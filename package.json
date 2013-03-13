@@ -1,6 +1,6 @@
 {
   "name": "njs-exp",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "An Experiment",
   "main": "app.js",
   "dependencies": {
@@ -16,7 +16,15 @@
   "scripts": {
     "test": "mocha"
   },
-  "repository": "",
-  "author": "",
-  "license": "BSD"
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/aiten/express-jasmine-testem.git"
+  },
+  "author": "Antony Jones",
+  "license": "BSD",
+  "keywords": [
+    "testem",
+    "express",
+    "jasmine"
+  ]
 }

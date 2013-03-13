@@ -5,7 +5,7 @@
     ],
     "launchers": {
         "Node": {
-            "command": "node_modules/jasmine-node/lib/jasmine-node/cli.js spec"
+            "command": "node node_modules/jasmine-node/lib/jasmine-node/cli.js spec"
         }
     },
     "launch_in_dev": [ "node" ]
