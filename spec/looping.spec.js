@@ -5,16 +5,29 @@ describe('spec which loops', function() {
   describe('Here is some functionality', function() {
 
     neckbeard.where(
-      ['firstNumber', 'secondNumber'],
-      [[1,            1],
-       [2,            2],
-       [3,            3]]
+      ['firstNumber', 'secondNumber', 'sum', 'difference'],
+      [[3,            3,              6,              0],
+       [10,           4,              14,             6],
+       [7,            1,              8,              6]]
     );
 
-    neckbeard.loop('Looping upon an iteration where 2=#firstNumber and 2=#secondNumber', function(a, b) {
+    neckbeard.loop('Hoping that #firstNumber plus #secondNumber is #sum, not #difference', function(firstNumber, secondNumber, sum, difference) {
 
-      expect(a).toBe(2);
-      expect(b).toBe(2);
+      expect(firstNumber+secondNumber).toEqual(sum);
+      expect(firstNumber-secondNumber).toEqual(difference);
+
+    });
+
+  });
+
+  describe('Another quick functionality', function() {
+
+    neckbeard.where(['myVariable'], [[1], [2], [3], [4], [5]])
+
+    neckbeard.loop('This time, what should happen is 4=#myVariable and #pass', function(theNumber) {
+
+      expect(theNumber).toBeLessThan(6);
+      expect(theNumber).toBeGreaterThan(0);
 
     });
 
