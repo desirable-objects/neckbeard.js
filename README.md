@@ -1,6 +1,2 @@
-express-jasmine-testem
-======================
 
-Currently you can run the tests with:
-
-'testem'
+Another javascript framework based around farcial hair.
