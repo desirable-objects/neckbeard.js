@@ -3,6 +3,7 @@ var clauses = [];
 
 exports.iterate = function() {
 
+      clauses = [];
       definitions = arguments.length;
 
       return {
