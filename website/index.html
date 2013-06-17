@@ -357,7 +357,7 @@ describe('spec which loops', function() {
               7,       1,        8
     );
 
-    neckbeard.loop('#firstNumber plus #secondNumber is #sum', function(first, second, sum) {
+    neckbeard.loop('#first plus #second is #sum', function(first, second, sum) {
       expect(first+second).toEqual(sum);
     });
   });
@@ -366,7 +366,12 @@ describe('spec which loops', function() {
 				</details>
 				<details>
 					<summary>How do I install it?</summary>
-					<p>Oh, it's simple. Just require('neckbeard') from your Jasmine Speccy McSpeccersons.</p>
+					<p><strong>In AngularJS</strong></p>
+					<p>Oh, it's simple. Just include neckbeard.js in your test runner</p>
+					<p><strong>In Jasmine/Karma/Mocha</strong></p>
+					<p>Oh, it's simple. Just include neckbeard.js in your test runner</p>
+					<p><strong>In NodeJS</strong></p>
+					<p>Oh, it's simple. Just require('neckbeard-node') from your Speccy McSpeccersons.</p>
 				</details>
 				<details>
 					<summary>Who grew this neckbeard?</summary>
