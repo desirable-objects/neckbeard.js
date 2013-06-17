@@ -1,4 +1,4 @@
-neckbeard = require('./neckbeard');
+neckbeard = require('../src/neckbeard-node.js');
 
 describe('spec which loops', function() {
 
