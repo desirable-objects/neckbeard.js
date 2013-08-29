@@ -50,9 +50,13 @@ neckbeard.loop = function(description, functionUnderTest) {
 
     clauses.forEach(function(element, index) {
 
-        return it(createDescription(description, element), function() {
+        return it(createDescription(description, element), function(done) {
+
+            //TODO : Check for the existence of the "done" parameter, at the start, before injecting the done
+            // type - for now just assume everything needs it.
+
+            element.unshift(done);
             functionUnderTest.apply(this, element);
         });
     });
-
 };
