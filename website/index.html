@@ -346,20 +346,21 @@ function(x, y) {
 					<p>You just don't give up, do you? Here is how it is done:</p>
 					<pre>
 						<code data-language="javascript">
+var Ʊ = require('neckbeard-node.js');						
+						
 describe('spec which loops', function() {
 
   describe('Here is some functionality', function() {
 
-    neckbeard
-    .iterate('first', 'second', 'sum')
-    .where(   3,       3,        6,
-              10,      4,        14,
-              7,       1,        8
-    );
+    Ʊ.iterate('first', 'second', 'sum')
+     .where(   3,       3,        6,
+               10,      4,        14,
+               7,       1,        8
+     );
 
-    neckbeard.loop('#first plus #second is #sum', function(first, second, sum) {
-      expect(first+second).toEqual(sum);
-    });
+     Ʊ.loop('#first plus #second is #sum', function(first, second, sum) {
+       expect(first+second).toEqual(sum);
+     });
   });
 });</code>
 					</pre>
