@@ -16,7 +16,7 @@ neckbeard.iterate = function() {
                 var iteration = Math.floor(index/definitions.length);
                 if (clauses[iteration] === undefined) {
                     clauses[iteration] = [];
-                };
+                }
                 clauses[iteration].push(element);
             });
 
@@ -30,7 +30,7 @@ var valuesOf = function(object) {
 
     for (var key in object) {
         values.push(object[key]);
-    };
+    }
 
     return values;
 };
